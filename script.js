@@ -1,0 +1,3 @@
+const messages={calm:'You do not need to solve everything right now. Let the room be quiet for a moment.',happy:'Keep a little of this brightness with you. Small joys count more than we think.',tired:'You have done enough for this moment. Rest is also a way of moving forward.',stressed:'Take one breath, then another. You only need to meet the next small thing.'};
+const body=document.body;const reflection=document.querySelector('#reflection-text');
+document.querySelectorAll('.mood').forEach(button=>button.addEventListener('click',()=>{const mood=button.dataset.mood;body.dataset.mood=mood;reflection.textContent=messages[mood];document.querySelectorAll('.mood').forEach(item=>item.classList.toggle('active',item===button));}));

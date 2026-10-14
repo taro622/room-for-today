@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A small room that changes with your mood." />
+    <title>Room for Today</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Fraunces:opsz,wght,SOFT@9..144,500..700,0..100&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+  </head>
+  <body data-mood="calm">
+    <header><a class="site-title" href="#top"><span class="title-dot"></span>Room for Today</a><p>a small space for big feelings</p><span>✦</span></header>
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Take a small pause</p>
+        <h1 id="page-title">How are you<br /><em>feeling</em> today?</h1>
+        <p class="subtext">Choose a feeling. The room will shift with you.</p>
+        <div class="mood-picker" aria-label="Choose your mood">
+          <button class="mood active" data-mood="calm"><span>☾</span> Calm</button>
+          <button class="mood" data-mood="happy"><span>☀</span> Happy</button>
+          <button class="mood" data-mood="tired"><span>☁</span> Tired</button>
+          <button class="mood" data-mood="stressed"><span>≈</span> Stressed</button>
+        </div>
+      </section>
+
+      <section class="scene" aria-label="A room that reflects the selected mood">
+        <div class="room">
+          <div class="ceiling-light"><i></i></div>
+          <div class="window"><div class="sky"><div class="moon"></div><div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="rain"></div><div class="stars">✦　·　✦　　·</div></div><div class="window-frame"></div></div>
+          <div class="wall-print"><span>slow</span><span>down</span></div>
+          <div class="shelf"><span class="book one"></span><span class="book two"></span><span class="book three"></span><span class="vase">✿</span></div>
+          <div class="desk"><div class="lamp"><div class="shade"></div><div class="stem"></div><div class="base"></div></div><div class="cup">✦</div><div class="paper"></div></div>
+          <div class="plant"><div class="leaf l1"></div><div class="leaf l2"></div><div class="leaf l3"></div><div class="pot"></div></div>
+          <div class="rug"></div>
+        </div>
+      </section>
+
+      <section class="reflection" aria-live="polite"><span class="quote-mark">“</span><p id="reflection-text">You do not need to solve everything right now. Let the room be quiet for a moment.</p><span class="quote-mark">”</span></section>
+    </main>
+    <footer>Designed with HTML structure and CSS atmosphere.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
